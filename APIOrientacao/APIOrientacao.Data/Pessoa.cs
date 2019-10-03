@@ -13,5 +13,8 @@ namespace APIOrientacao.Data
         public string Nome { get; set; }
 
         public Aluno Aluno { get; set; }
+        public Professor Professor { get; set; }
+
+
     }
 }

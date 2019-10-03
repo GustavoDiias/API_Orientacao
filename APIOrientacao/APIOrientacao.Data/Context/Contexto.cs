@@ -20,11 +20,9 @@ namespace APIOrientacao.Data.Context
         public DbSet<Projeto> Projeto { get; set; }
         public DbSet<Situacao> Situacao { get; set; }
         public DbSet<SituacaoProjeto> SituacaoProjeto { get; set; }
-
-        //public void PessoaMB(ModelBuilder modelBuilder)
-        //{
-
-        //}
+        public DbSet<Professor> Professor { get; set; }
+        public DbSet<TipoOrientacao> TipoOrientacao { get; set; }
+        public DbSet<Orientacao> Orientacao { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -39,6 +37,7 @@ namespace APIOrientacao.Data.Context
             modelBuilder.ForSqlServerUseIdentityColumns();
             modelBuilder.HasDefaultSchema("dbo");
 
+            #region Pessoa
             modelBuilder.Entity<Pessoa>(e =>
             {
                 e.ToTable("Pessoa");
@@ -50,7 +49,9 @@ namespace APIOrientacao.Data.Context
                 .IsRequired()
                 .HasMaxLength(300);
             });
+            #endregion
 
+            #region Curso
             modelBuilder.Entity<Curso>(e =>
             {
                 e.ToTable("Curso");
@@ -63,7 +64,9 @@ namespace APIOrientacao.Data.Context
                     .HasMaxLength(150);
 
             });
+            #endregion
 
+            #region Aluno
             modelBuilder.Entity<Aluno>(e =>
             {
                 e.ToTable("Aluno");
@@ -92,7 +95,9 @@ namespace APIOrientacao.Data.Context
                     .HasForeignKey(d => d.IdCurso)
                     .HasConstraintName("FK_CursoAluno");
             });
+            #endregion
 
+            #region Situação
             modelBuilder.Entity<Situacao>(e =>
             {
                 e.ToTable("Situacao");
@@ -104,7 +109,9 @@ namespace APIOrientacao.Data.Context
                     .IsRequired()
                     .HasMaxLength(100);
             });
+            #endregion
 
+            #region Projeto
             modelBuilder.Entity<Projeto>(e =>
             {
                 e.ToTable("Projeto");
@@ -127,7 +134,9 @@ namespace APIOrientacao.Data.Context
                     .HasForeignKey(d => d.IdPessoa)
                     .HasConstraintName("FK_AlunoProjeto");
             });
+            #endregion
 
+            #region SituaçãoProjeto
             modelBuilder.Entity<SituacaoProjeto>(e =>
             {
                 e.ToTable("SituacaoProjeto");
@@ -153,6 +162,78 @@ namespace APIOrientacao.Data.Context
                     .HasForeignKey(d => d.IdProjeto)
                     .HasConstraintName("FK_ProjetoSituacaoProjeto");
             });
+            #endregion
+
+            #region Professor
+            modelBuilder.Entity<Professor>(e =>
+            {
+                e.ToTable("Professor");
+                e.HasKey(c => c.IdPessoa).HasName("IdPessoaProfessor");
+                e.Property(c => c.IdPessoa).HasColumnName("IdPessoa")
+                    .IsRequired();
+
+                e.Property(c => c.RegistroAtivo)
+                .HasColumnName("RegistroAtivo")
+                .IsRequired();
+
+                e.HasOne(d => d.Pessoa)
+                    .WithOne(p => p.Professor)
+                    .HasForeignKey<Professor>(d => d.IdPessoa)
+                    .HasConstraintName("PFK_PessoaProfessor");
+
+            });
+            #endregion
+
+            #region TipoOrientacao
+            modelBuilder.Entity<TipoOrientacao>(e =>
+            {
+                e.ToTable("TipoOrientacao");
+                e.HasKey(c => c.IdTipoOrientacao).HasName("IdTipoOrientacao");
+                e.Property(c => c.IdTipoOrientacao).HasColumnName("IdTipoOrientacao")
+                    .ValueGeneratedOnAdd();
+
+                e.Property(c => c.Descricao).HasColumnName("Descricao")
+                    .IsRequired()
+                    .HasMaxLength(300);
+
+            });
+            #endregion
+
+            #region Orientação
+            modelBuilder.Entity<Orientacao>(e =>
+            {
+                e.ToTable("Orientacao");
+                e.HasKey(k => new { k.IdProjeto, k.IdPessoa })
+                .HasName("FK_Orientacao");
+
+                e.Property(c => c.IdProjeto).HasColumnName("IdProjeto")
+                .IsRequired();
+
+                e.Property(c => c.IdPessoa).HasColumnName("IdPessoa")
+                .IsRequired();
+
+                e.Property(c => c.IdTipoOrientacao).HasColumnName("IdTipoOrientacao")
+                .IsRequired();
+
+                e.Property(c => c.DataRegistro).HasColumnName("DataRegistro")
+                .HasColumnType("datetime").IsRequired();
+
+                e.HasOne(d => d.TipoOrientacao)
+                .WithMany(p => p.Orientacoes)
+                .HasForeignKey(d => d.IdTipoOrientacao)
+                .HasConstraintName("FK_TipoOrientacaoOrientacao");
+
+                e.HasOne(d => d.Projeto)
+                    .WithMany(p => p.Orientacoes)
+                    .HasForeignKey(d => d.IdProjeto)
+                    .HasConstraintName("FK_ProjetoOrientacao");
+
+                e.HasOne(d => d.Professor)
+                    .WithMany(p => p.Orientacoes)
+                    .HasForeignKey(d => d.IdPessoa)
+                    .HasConstraintName("FK_PessoaOrientacao");        
+            });
+            #endregion
         }
     }
 }

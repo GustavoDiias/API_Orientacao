@@ -1,0 +1,5 @@
+Trocar no appsetings.jason
+Trocar no appsetingsDevelopment.jason
+
+add-migration (NomeDaMigration)
+update-database (NomeDaMigration)

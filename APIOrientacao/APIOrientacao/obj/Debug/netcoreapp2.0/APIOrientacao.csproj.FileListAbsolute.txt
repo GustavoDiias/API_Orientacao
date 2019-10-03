@@ -11,3 +11,17 @@ D:\jcorrea\noturno\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrient
 D:\jcorrea\noturno\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.pdb
 D:\jcorrea\noturno\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.Data.dll
 D:\jcorrea\noturno\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.Data.pdb
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.deps.json
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.runtimeconfig.json
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.runtimeconfig.dev.json
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.dll
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.pdb
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.Data.dll
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.Data.pdb
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.csprojAssemblyReference.cache
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.csproj.CoreCompileInputs.cache
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.AssemblyInfoInputs.cache
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.AssemblyInfo.cs
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.csproj.CopyComplete
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.dll
+C:\Users\ghenr\Desktop\UNIPAM\API_Orientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.pdb
