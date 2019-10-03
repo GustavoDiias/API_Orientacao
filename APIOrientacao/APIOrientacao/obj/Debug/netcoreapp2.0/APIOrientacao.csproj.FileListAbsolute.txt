@@ -1,0 +1,13 @@
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.deps.json
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.runtimeconfig.json
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.runtimeconfig.dev.json
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.dll
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.pdb
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.csprojResolveAssemblyReference.cache
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.csproj.CoreCompileInputs.cache
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.AssemblyInfoInputs.cache
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.AssemblyInfo.cs
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.dll
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.pdb
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.Data.dll
+D:\jcorrea\noturno\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.Data.pdb
