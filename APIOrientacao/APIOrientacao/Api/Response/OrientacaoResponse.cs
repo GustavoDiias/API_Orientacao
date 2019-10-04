@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace APIOrientacao.Api.Response
 {
-    public class Orientacao
+    public class OrientacaoResponse
     {
         public int IdProjeto { get; set; }
         public int IdPessoa { get; set; }
