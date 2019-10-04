@@ -1,0 +1,10 @@
+API{
+ Request
+ Os id auto incremento nao precisa mandar.
+
+ Response
+ Tudo que manda
+}
+
+Controllers
+
