@@ -12,7 +12,7 @@ API em C#
 <h2>Migration</h2>
 <ol>
   <li>Trocar no <b>appsettings.json</b> o caminho do Banco</li>
-  <li>Trocar no <b>appsettings Development.json</b> o caminho do Bancon</li>
+  <li>Trocar no <b>appsettings Development.json</b> o caminho do Banco</li>
   <li>Executar no promp do NuGet <b>add-migration (NomeDaMigration)</b></li>
   <li>Executar no promp do NuGet <b>update-database (NomeDaMigration)</b></li>
 </ol>
