@@ -29,6 +29,7 @@ namespace APIOrientacao.Controllers
 
             var aluno = new Aluno
             {
+                IdPessoa = alunoRequest.IdPessoa,
                 Matricula = alunoRequest.Matricula,
                 RegistroAtivo = alunoRequest.RegistroAtivo,
                 IdCurso = alunoRequest.IdCurso

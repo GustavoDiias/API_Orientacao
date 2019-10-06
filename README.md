@@ -13,8 +13,8 @@ API em C#
 <ol>
   <li>Trocar no <b>appsettings.json</b> o caminho do Banco</li>
   <li>Trocar no <b>appsettings Development.json</b> o caminho do Bancon</li>
-  <li>Executar no promp do NuGet add-migration <b>(NomeDaMigration)</b></li>
-  <li>Executar no promp do NuGet update-database <b>(NomeDaMigration)</b></li>
+  <li>Executar no promp do NuGet <b>add-migration (NomeDaMigration)</b></li>
+  <li>Executar no promp do NuGet <b>update-database (NomeDaMigration)</b></li>
 </ol>
     
 <h2>Ordem de Mapeamento</h2>

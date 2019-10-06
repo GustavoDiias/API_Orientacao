@@ -29,6 +29,8 @@ namespace APIOrientacao.Controllers
 
             var situacaoProjeto = new SituacaoProjeto
             {
+                IdSituacao = situacaoProjetoRequest.IdSituacao,
+                IdProjeto = situacaoProjetoRequest.IdProjeto,
                 DataRegistro = situacaoProjetoRequest.DataRegistro
             };
 

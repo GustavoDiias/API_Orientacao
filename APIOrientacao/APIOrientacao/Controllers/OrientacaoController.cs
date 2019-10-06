@@ -29,6 +29,8 @@ namespace APIOrientacao.Controllers
 
             var orientacao = new Orientacao
             {
+                IdProjeto = orientacaoRequest.IdProjeto,
+                IdPessoa = orientacaoRequest.IdPessoa,
                 IdTipoOrientacao = orientacaoRequest.IdTipoOrientacao,
                 DataRegistro = orientacaoRequest.DataRegistro
             };
